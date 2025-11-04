@@ -144,6 +144,7 @@ Feedstock Maintainers
 =====================
 
 * [@akashg105](https://github.com/akashg105/)
+* [@bharathGuntamadugu](https://github.com/bharathGuntamadugu/)
 * [@devanshdesai](https://github.com/devanshdesai/)
 * [@nwangamz](https://github.com/nwangamz/)
 * [@tejaskash](https://github.com/tejaskash/)
