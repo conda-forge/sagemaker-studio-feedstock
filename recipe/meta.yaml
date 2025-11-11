@@ -45,11 +45,13 @@ requirements:
     - snowflake-sqlalchemy >=1.7.7
     - sqlalchemy-bigquery >=0.0.7
     - pymssql >=2.3.8
+    - numpy >=1.19.0,<2.0.0
 
 test:
   imports:
     - sagemaker_studio
   commands:
+    - pip install pydynamodb
     - pip check
   requires:
     - pip
