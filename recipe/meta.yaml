@@ -1,6 +1,6 @@
 {% set name = "sagemaker-studio" %}
 {% set version = "1.0.23" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -33,6 +33,18 @@ requirements:
     - python-dateutil >=2.5.3
     - setuptools >=21.0.0
     - packaging >=24.0
+    - pyathena >=3.18.0
+    - sqlalchemy >=2.0.43
+    - pandas >=2.3.2
+    - duckdb>=0.8.0, <1.0.0
+    - awswrangler >=3.5.0
+    - pyiceberg >=0.7.0
+    - pyarrow >=14.0.0, <21.0.0
+    - psycopg2-binary >=2.9.10
+    - pymysql >=1.1.2
+    - snowflake-sqlalchemy >=1.7.7
+    - sqlalchemy-bigquery >=0.0.7
+    - pymssql >=2.3.8
 
 test:
   imports:
