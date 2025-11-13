@@ -1,5 +1,5 @@
 {% set name = "sagemaker-studio" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_studio-{{ version }}.tar.gz
-  sha256: fe2af08974cbd7907d79ced54e30ee3245b85b42b9def96d145baabc289bad3c
+  sha256: bdc94394908467f8641d2a8a31ea467a80453cc9bc3930f5bd4beff061727621
 
 build:
   noarch: python
@@ -36,16 +36,16 @@ requirements:
     - pyathena >=3.18.0
     - sqlalchemy >=2.0.43
     - pandas >=2.3.2
-    - duckdb >=0.8.0,<1.0.0
+    - duckdb >=1.4.0
     - awswrangler >=3.5.0
     - pyiceberg >=0.7.0
-    - pyarrow >=14.0.0, <21.0.0
+    - numpy >=1.26.4,<2.3.0
+    - pyarrow >=19.0.0
     - psycopg2-binary >=2.9.10
     - pymysql >=1.1.2
     - snowflake-sqlalchemy >=1.7.7
     - sqlalchemy-bigquery >=0.0.7
     - pymssql >=2.3.8
-    - numpy >=1.19.0,<2.0.0
 
 test:
   imports:
