@@ -148,7 +148,5 @@ Feedstock Maintainers
 * [@devanshdesai](https://github.com/devanshdesai/)
 * [@nwangamz](https://github.com/nwangamz/)
 * [@tejaskash](https://github.com/tejaskash/)
-
-
-<!-- dummy commit to enable rerendering -->
+* [@ziwikiwi](https://github.com/ziwikiwi/)
 
