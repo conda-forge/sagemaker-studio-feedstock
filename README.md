@@ -148,5 +148,6 @@ Feedstock Maintainers
 * [@devanshdesai](https://github.com/devanshdesai/)
 * [@nwangamz](https://github.com/nwangamz/)
 * [@tejaskash](https://github.com/tejaskash/)
+* [@xylar](https://github.com/xylar/)
 * [@ziwikiwi](https://github.com/ziwikiwi/)
 
