@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -25,6 +25,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    # from requirements.txt
     - boto3 >=1.34.106
     - botocore >=1.34.106
     - urllib3 >=1.26.19
@@ -37,22 +38,22 @@ requirements:
     - sqlalchemy >=2.0.43
     - pandas >=2.3.2
     - duckdb >=1.4.0
-    - awswrangler >=3.5.0
-    - pyiceberg >=0.7.0
-    - numpy >=1.26.4,<2.3.0
-    - pyarrow >=19.0.0
-    - psycopg2-binary >=2.9.10
     - pymysql >=1.1.2
     - snowflake-sqlalchemy >=1.7.7
     - sqlalchemy-bigquery >=0.0.7
+    - pydynamodb >=0.7.4
+    - psycopg2-binary >=2.9.10
     - pymssql >=2.3.8
+    - awswrangler >=3.5.0
+    - pyiceberg >=0.7.0
+    - numpy <2.3.0,>=1.26.4
+    - pyarrow >=19.0.0
     - aws-embedded-metrics >=3.2.0
 
 test:
   imports:
     - sagemaker_studio
   commands:
-    - pip install pydynamodb
     - pip check
   requires:
     - pip
@@ -72,3 +73,4 @@ extra:
     - tejaskash
     - devanshdesai
     - akashg105
+    - xylar
