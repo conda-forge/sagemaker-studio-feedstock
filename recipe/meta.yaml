@@ -1,5 +1,5 @@
 {% set name = "sagemaker-studio" %}
-{% set version = "1.1.6" %}
+{% set version = "1.1.7" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_studio-{{ version }}.tar.gz
-  sha256: d4551a9ec1aaefaa1834e85195f29a80b231280de15aafb850314c13d4039630
+  sha256: 2e1b18214b9da8bdb2cbc2ac2370b72dd916819014ceac9b29cd22d8a5ed68e6
 
 build:
   noarch: python
@@ -48,11 +48,13 @@ requirements:
     - pydynamodb >=0.7.4
     - pymssql >=2.3.8
     - aws-embedded-metrics >=3.2.0
+    - deltalake >=1.0.0
 
 test:
   imports:
     - sagemaker_studio
   commands:
+    - pip install deltalake
     - pip check
   requires:
     - pip
