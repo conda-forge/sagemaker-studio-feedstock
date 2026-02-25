@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_studio-{{ version }}.tar.gz
-  sha256: 2e1b18214b9da8bdb2cbc2ac2370b72dd916819014ceac9b29cd22d8a5ed68e6
+  sha256: ff4454e15c5d3278605c1839060dcc6be9f391ca154d2a49cdee65ee7f3ff385
 
 build:
   noarch: python
@@ -54,7 +54,6 @@ test:
   imports:
     - sagemaker_studio
   commands:
-    - pip install deltalake
     - pip check
   requires:
     - pip
