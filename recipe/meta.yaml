@@ -1,5 +1,5 @@
 {% set name = "sagemaker-studio" %}
-{% set version = "1.1.8" %}
+{% set version = "1.1.10" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_studio-{{ version }}.tar.gz
-  sha256: 3a799b9f6253171072d93ce297c7dad47b7d3168812628e796c03a08b0207070
+  sha256: 792a7d2b3867d9eb6cae3c64e0af25cc97907bb7b1e83ebd07de361b6bf3f277
 
 build:
   noarch: python
