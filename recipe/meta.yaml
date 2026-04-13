@@ -1,5 +1,5 @@
 {% set name = "sagemaker-studio" %}
-{% set version = "1.1.8" %}
+{% set version = "1.1.12" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_studio-{{ version }}.tar.gz
-  sha256: 3a799b9f6253171072d93ce297c7dad47b7d3168812628e796c03a08b0207070
+  sha256: f7ff535647913294bfd44696a17db07f0a90d5b4289f4ac05422222354d53026
 
 build:
   noarch: python
@@ -49,6 +49,7 @@ requirements:
     - pymssql >=2.3.8
     - aws-embedded-metrics >=3.2.0
     - deltalake >=1.0.0
+    - sqlglot >=27.28.1
 
 test:
   imports:
