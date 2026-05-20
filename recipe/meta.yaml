@@ -1,5 +1,5 @@
 {% set name = "sagemaker-studio" %}
-{% set version = "1.1.15" %}
+{% set version = "1.1.19" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_studio-{{ version }}.tar.gz
-  sha256: 8c0a8994fa2876b25d0c0ff1413a83da456a291f29634ba3b85becb9e074f3ea
+  sha256: 6c0d8f74f93972c3670c436790794ecd1c7ff0940dec20d1ab4bd3be39ed49c5
 
 build:
   noarch: python
@@ -51,6 +51,7 @@ requirements:
     - deltalake >=1.0.0
     - sqlglot >=27.28.1
     - opensearch-py >=2.5.0
+    - vertica-python >=1.4.0
 
 test:
   imports:
