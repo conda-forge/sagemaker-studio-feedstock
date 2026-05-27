@@ -52,6 +52,8 @@ requirements:
     - sqlglot >=27.28.1
     - opensearch-py >=2.5.0
     - vertica-python >=1.4.0
+    - trino-python-client >=0.308.0
+    - pyjwt >=2.0.0
 
 test:
   imports:
