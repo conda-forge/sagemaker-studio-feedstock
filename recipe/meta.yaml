@@ -1,5 +1,5 @@
 {% set name = "sagemaker-studio" %}
-{% set version = "1.1.20" %}
+{% set version = "1.1.22" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_studio-{{ version }}.tar.gz
-  sha256: 74ec75cff0098f449a02ffc38bc10e56ff76f25c30fcfbe9a7c70be0c41a78bf
+  sha256: f7f87ae217add406f09a644d8cbddf73d2c622f46241a0f948490905a8df8326
 
 build:
   noarch: python
@@ -50,6 +50,7 @@ requirements:
     - aws-embedded-metrics >=3.2.0
     - deltalake >=1.0.0
     - sqlglot >=27.28.1
+    - oracledb >=3.4.1
     - opensearch-py >=2.5.0
     - vertica-python >=1.4.0
     - trino-python-client >=0.308.0
