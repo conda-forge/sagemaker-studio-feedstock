@@ -35,7 +35,7 @@ requirements:
     - packaging >=24.0
     - pyathena >=3.18.0
     - sqlalchemy >=2.0.43
-    - pandas >=2.3.2,<3.0.0
+    - pandas >=2.3.2
     - duckdb >=1.4.0,<1.5.2
     - awswrangler >=3.5.0
     - pyiceberg >=0.7.0
