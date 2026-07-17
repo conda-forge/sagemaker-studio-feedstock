@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_studio-{{ version }}.tar.gz
-  sha256: 0a41329e9b3619a0dccea82c9618823c09658a08c273236c3aad24ae4f5e68a7
+  sha256: bc900d1d2259820e55655b20dc783d06ce558f6f720ab661c25ddc493e7f717d
 
 build:
   noarch: python
