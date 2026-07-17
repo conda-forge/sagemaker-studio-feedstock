@@ -1,5 +1,5 @@
 {% set name = "sagemaker-studio" %}
-{% set version = "1.1.22" %}
+{% set version = "1.1.25" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sagemaker_studio-{{ version }}.tar.gz
-  sha256: f7f87ae217add406f09a644d8cbddf73d2c622f46241a0f948490905a8df8326
+  sha256: 0a41329e9b3619a0dccea82c9618823c09658a08c273236c3aad24ae4f5e68a7
 
 build:
   noarch: python
@@ -35,8 +35,8 @@ requirements:
     - packaging >=24.0
     - pyathena >=3.18.0
     - sqlalchemy >=2.0.43
-    - pandas >=2.3.2
-    - duckdb >=1.4.0
+    - pandas >=2.3.2,<3.0.0
+    - duckdb >=1.4.0,<1.5.2
     - awswrangler >=3.5.0
     - pyiceberg >=0.7.0
     - numpy >=1.26.4,<2.3.0
